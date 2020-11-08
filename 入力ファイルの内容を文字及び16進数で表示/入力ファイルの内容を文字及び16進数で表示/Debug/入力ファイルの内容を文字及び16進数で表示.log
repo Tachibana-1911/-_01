@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\hk232\source\repos\入力ファイルの内容を文字及び16進数で表示\入力ファイルの内容を文字及び16進数で表示\main.cpp(10,2): error C3861: 'dump': 識別子が見つかりませんでした
+C:\Users\hk232\source\repos\入力ファイルの内容を文字及び16進数で表示\入力ファイルの内容を文字及び16進数で表示\main.cpp(11,2): error C3861: 'dump': 識別子が見つかりませんでした
+C:\Users\hk232\source\repos\入力ファイルの内容を文字及び16進数で表示\入力ファイルの内容を文字及び16進数で表示\main.cpp(36,11): error C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
