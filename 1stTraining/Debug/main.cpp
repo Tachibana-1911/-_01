@@ -4,27 +4,17 @@
 #define WIDTH   60 //行当たり表示バイト数
 #define MASKCHR '.'//16進数表示で20～7E　以外の場合の表示用文字
 
+void dump(char* filename, long from, long to) {
 
-int main() {
-	/*for testing bump()*/
-	dump("main.c",0L,-1L);
-	dump("main.cpp", 17L, 40L);
-
-}
-
-
-
-void dump(char *filename, long from, long to) {
-
-	FILE *infile;
+	FILE* infile;
 	int chr, pos = 0;
 	long cnt = 0;
 	char tblC[256], bufC[WIDTH + 1];
 	char tblH[256], bufH[WIDTH + 1];
 	char tblL[256], bufL[WIDTH + 1];
 	char hex[] = "0123456789ABCDEF";
-	
-	for (chr = 0x00; chr <= 0xFF;chr++) {
+
+	for (chr = 0x00; chr <= 0xFF; chr++) {
 		if ((0x20 <= chr) && (chr <= 0x7E))
 			tblC[chr] = chr;
 		else
@@ -61,3 +51,10 @@ void dump(char *filename, long from, long to) {
 
 }
 
+int main() {
+	/*for testing bump()*/
+	char fname[] = "main.cpp";
+
+	dump(fname, 0L, -1L);
+	dump(fname, 17L, 40L);
+}
