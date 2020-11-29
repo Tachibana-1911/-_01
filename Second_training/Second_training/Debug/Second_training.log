@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\hk232\source\repos\Second_training\Second_training\main.cpp(24,13): warning C4326: 'main' の戻り値の型には、'int' を使用してください。'void' は使用できません
+  Second_training.vcxproj -> C:\Users\hk232\source\repos\Second_training\Debug\Second_training.exe
